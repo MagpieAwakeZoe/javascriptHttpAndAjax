@@ -1,0 +1,33 @@
+HTTP请求:
+Method | path to resource | http/version number
+第一部分是request line，包括请求的方法Method（GET/POST）、
+请求资源的路径path to resource（对应后端路由部分定义的路径）和http协议的版本号。
+-----------------------------------------------
+Header name 1: value
+Header name 2: value
+  ...
+  第二部分是request header请求头
+-----------------------------------------------
+
+-----------------------------------------------
+request body(optional)
+第三部分是request body请求体，当使用GET方法发送请求的时候，请求体是空的
+
+
+
+
+
+
+HTTP响应
+http/version number | status code | message
+第一部分是response line，包括http协议版本号，响应状态码和响应状态消息
+-----------------------------------------------
+Header name 1: value
+header name 2: value
+...
+第二部分是response header响应头
+-----------------------------------------------
+
+-----------------------------------------------
+response body(optional)
+第三部分是响应体

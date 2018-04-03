@@ -1,0 +1,14 @@
+
+        URL基本概念
+        基本格式：
+        schema://host[:port#]/path/.../[?query-string][#anchor]
+
+        scheme 传输协议(http,ftp,https)
+        host 服务器(HTTP服务器的IP地址或者域名)
+        port 端口号
+        path 路径(访问资源的路径)
+        query-string 查询字符串(发送给http服务器的数据,get请求数据会显示)
+        例子:
+        http://demo-bootstrap-blog.herokuapp.com/validate?name=zzl
+        以“?”字符为起点，每个参数以“&”隔开，再以“=”分开参数名称与数据.
+        anchor 锚(定位到页面中的特定地方)

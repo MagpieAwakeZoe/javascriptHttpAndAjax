@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery3.1.1.js"></script>
+</head>
+<body>
+    <div>
+        <button id="send" onClick = test()>发送</button>
+    </div>
+    <script>
+        function test(){
+            $.ajax({
+                    type:"post",
+                    url:"https://bird.ioliu.cn/v1",
+                    data:{"name":"test","id":"11"},
+                    dataType:"json",
+                    success:function(data){
+                        console.log("成功post数据");
+                    },
+                    error:function (data) {
+                        console.log("数据post失败");
+                    }
+                }
+            );
+        }
+    </script>
+</body>
+</html>

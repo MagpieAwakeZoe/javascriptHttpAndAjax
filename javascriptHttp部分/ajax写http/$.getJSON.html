@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery3.1.1.js"></script>
+</head>
+<body>
+    <div>
+        <button onClick = getData()>按钮</button>
+        <div id="dataContent"></div>
+    </div>
+    <script>
+        function getData(){
+            $.getJSON("https://bird.ioliu.cn/v1",function(data){        //这里的data参数是返回的数据
+                $("#dataContent").html(JSON.stringify(data));
+            });
+        }
+    </script>
+</body>
+</html>
